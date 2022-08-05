@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: signoz-app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/RayNawara/signoz-docckerfile.git
+    region: oregon
+    plan: free
+    numInstances: 1
+    # envVars:
+    #   - key: MBA_ENV
+    #     value: staging
